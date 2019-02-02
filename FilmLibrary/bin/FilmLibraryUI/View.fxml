@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FilmLibraryUI.Controller">
+   <children>
+      <Pane prefHeight="480.0" prefWidth="640.0">
+         <children>
+            <TextArea fx:id="textarea" layoutX="214.0" layoutY="64.0" prefHeight="334.0" prefWidth="352.0" />
+            <Button fx:id="addbutton" layoutX="52.0" layoutY="155.0" mnemonicParsing="false" onAction="#addFunction" prefHeight="31.0" prefWidth="101.0" text="Add" />
+            <Button fx:id="readbutton" layoutX="52.0" layoutY="209.0" mnemonicParsing="false" onAction="#readfile" prefHeight="31.0" prefWidth="101.0" text="Read" />
+            <Button fx:id="clearbutton" layoutX="52.0" layoutY="262.0" mnemonicParsing="false" onAction="#clearFile" prefHeight="31.0" prefWidth="101.0" text="Clear" />
+            <Button fx:id="submitbutton" layoutX="320.0" layoutY="262.0" mnemonicParsing="false" onAction="#enterMovie" text="Submit" />
+            <TextField fx:id="moviefield" layoutX="260.0" layoutY="155.0" />
+            <TextField fx:id="scorefield" layoutX="260.0" layoutY="209.0" />
+            <Text fx:id="movietext" layoutX="260.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie Title" />
+            <Text fx:id="scoretext" layoutX="260.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score" />
+            <Label fx:id="datalabel" layoutX="260.0" layoutY="101.0" text="Data is added" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
